@@ -66,12 +66,13 @@ export default class HomeScreen extends Component {
     }
   };
   bannerError = error => {
-    Alert.alert(`${error}`);
+    null;
+    //Alert.alert(`${error}`);
   };
 
   awardAdCaller = async () => {
     if (this.state.actionCall == 3) {
-      AdMobRewarded.setAdUnitID("ca-app-pub-7328130788754961/4433152574");// AdMobRewarded.setAdUnitID("ca-app-pub-3940256099942544/5224354917");
+      AdMobRewarded.setAdUnitID("ca-app-pub-7328130788754961/4433152574"); // AdMobRewarded.setAdUnitID("ca-app-pub-3940256099942544/5224354917");
       AdMobRewarded.setTestDeviceID("EMULATOR");
       await AdMobRewarded.requestAdAsync();
       await AdMobRewarded.showAdAsync();

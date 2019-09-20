@@ -18,11 +18,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "android": {
+      "package": "com.singhpriyanshu.recognizr",
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-7328130788754961~7096697134"
       }
     },
     "ios": {
+      "bundleIdentifier": "com.singhpriyanshu.recognizr",
       "supportsTablet": true
     }
   }
